@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/你的数据库?serverTimezone=GMT%2b8
+    username: 数据库名
+    password: 数据库密码
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+files:
+  upload:
+    path: 文件上传磁盘地址/

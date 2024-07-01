@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\兼职外包资料\c061118-8931-硅谷甄选-正在开发\硅谷甄选\general-template-redis-security-master\springboot\General-template-redis-security\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

@@ -1,0 +1,32 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/generaltemplate-security
+        username: root
+        password: root
+
+    servlet:
+        multipart:
+            max-file-size: 10MB
+
+    redis:
+        host: 127.0.0.1
+        password:
+        port: 6379
+
+mybatis-plus:
+    mapper-locations: classpath:mapper/*.xml
+    global-config:
+        db-config:
+            logic-delete-value: 1
+            logic-not-delete-value: 0
+
+files:
+    upload:
+        path: D:/file/
+
+#token:
+#    sign: ssf@jig#%jiojojas#fdghsdjiogsdg564dfh5fd1b5fg4564sfho%##$1563113#%
+#斜体错误
+token:
+    sign: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxIiwiZXhwIjoxNzE5ODI0NzY3fQ.pIW51rSD4E9012rdO5ssJV8NOgoZjq6c8zuTjw-XcJA
